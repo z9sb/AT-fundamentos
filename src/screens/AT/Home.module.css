@@ -1,8 +1,0 @@
-.containerHome{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-}
