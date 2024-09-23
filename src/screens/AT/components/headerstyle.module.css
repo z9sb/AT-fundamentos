@@ -1,0 +1,141 @@
+.MenuBar{
+    width: 100vw;
+    height: 40px;
+}
+.MenuList{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    height: 45px;
+    white-space: nowrap;
+    justify-content: space-evenly;
+}
+
+.MenuItem{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.subMenuItem{
+    display: flex;
+    width: 70%;
+    padding: 10px;
+    border: 0px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.subMenuItem:hover{
+    background-color: #9da9b6da;
+    cursor: pointer;
+}
+
+.MenuList::-webkit-scrollbar {
+    display: none;
+}
+
+.MenuInput{
+    color: black;
+    width: 100vw;
+    height: 60px;
+    border: 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+}
+
+.closeMenu{
+    display: none;
+}
+
+.openMenu{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #007BFF;
+    margin: 0px;
+    width: 250px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition: width 0.3s ease;
+}
+
+.subMenuList{
+    color: brown;
+    flex: 1;
+}
+
+.buttonSubMenu{
+    border: 0px;
+    padding: 10px;
+}
+
+.buttonSubMenu:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100vw;
+}
+
+.openIconClose{
+    height: 70px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 1000;
+}
+.headerTop button{
+    padding: 20px;
+}
+
+@media (min-width: 400px){
+    .MenuInput{
+        width: 90vw;
+    }   
+
+    .Menu{
+        top: 0px;
+    }
+    
+    .openMenu{
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 700px){
+    .MenuInput{
+        width: 90vw;
+    }   
+
+    .openMenu{
+        width: 70vw;
+    }
+
+}

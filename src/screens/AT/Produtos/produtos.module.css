@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagemPrincipal{
+    width: 100%;
+    max-width: 700px;
+}
+
+
+.imagensSecundarias{
+    width: 100px;
+    margin: 10px;
+}
+
+.containterCentral{
+    height: 300px;
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagensSelecao{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagensSelecao li{
+    list-style-type: none;
+}
+
+
+.imagensSelecao li img{
+    border: 1px solid black;
+    width:  42px;
+    height: 42px;
+}
+
+.descricao{
+    max-width: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.venda{
+    border: 1px solid black;
+    width: 210px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 60%;
+    padding: 20px;
+}
+
+.venda button{
+    cursor: pointer;
+}
+.venda button:hover{
+    background-color: #0056b3;
+    color: white;
+}
+
+.venda p{
+    flex: 1;
+    width: 100%;
+}
+
+.descricaoProduto p{
+    min-width: 200px;
+    max-width: 700px;
+    text-align: justify;
+}
+
+.descricaoProduto ul{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 20px 0px 20px 20px;
+    display: none;
+}
+
+.descricao h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    width: 100%;
+}
+
+.descricao li ul {
+    text-align: justify;
+    
+}
+
+.ButtonBotton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+.ButtonBotton:hover {
+    background-color: #0056b3;
+}
+  
+.subMenuClose{
+    display: none;
+}
+
+.subMenuOpen{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 18px;
+    background-color:  #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.subMenuOpen li{
+    cursor: pointer;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.subMenuOpen button{
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modalContainerButton{
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50px;
+    border: 0px;
+    bottom: 30px;
+    left: 20px;
+}
+
+.noneProduto{
+    display: none;
+}
+
+.deletarProduto{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    background-color: #0056b3;
+    width: 100vw;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonDelet{
+    width: 47vw;
+    height: 80px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(163, 146, 146);
+}
+
+.central{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (min-width: 300px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        top: 200px;
+        display: flex;
+        justify-content: flex-start
+    }
+    .venda{
+        width: 100vw;
+    }
+
+    .venda button{
+        padding: 10px;
+    }
+
+    .containterCentral{
+        height: 450px;
+    }
+
+    .descricaoProduto{
+        width: 100vw;
+    }
+}
+
+
+
+@media (min-width: 900px){
+    .imagemPrincipal{
+        width: 500px;
+        height: 50%;
+    }
+
+    .containterCentral{
+        height: 700px;
+
+    }
+
+    .container{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 100vw;
+    }
+
+    .imagensSelecao{
+        flex-direction: column;
+    }
+
+    .descricao{
+        max-width: 400px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    
+    .descricaoProduto {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .venda{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .imagemPrincipal{
+        width: 60vw;
+        height: 70%;
+    }
+
+    .containterCentral{
+        height: 700px;
+    }
+
+    .container{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .imagensSelecao{
+        flex-direction: column;
+    }
+
+    .descricao{
+        max-width: 1200px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100vw;
+        
+    }
+
+    .descricaoProduto ul{
+        display: flex;
+    }
+}
+
+@media (min-width: 1600px){
+    .central{
+        overflow-x: hidden;
+    }
+
+    .imagensSelecao{
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .containterCentral{
+        height: 800px;
+        width: 70vw;
+    }
+
+    .imagemPrincipal{
+        width: 100%;
+    }
+
+    .descricaoProduto{
+        font-size: 18px;
+    }
+
+    .descricaoProduto h2{
+        font-size: 26px;
+    }
+
+    .imagensSecundarias{
+        width: 60px;
+        height: 60px;
+    }
+
+    .venda{
+        font-size: 18px;
+    }
+    
+    .venda button{
+        padding: 10px;
+        font-size: 20px;
+        background-color: #007BFF;
+        border: 0px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .descricao{
+        padding: 0px 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100vw;
+        
+    }
+}
