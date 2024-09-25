@@ -16,7 +16,12 @@ export function HeaderTop({ setFavorito, setOrdemValor }) {
   });
 
   useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(dark));
+    if (dark){
+        document.body.classList.add('dark-mode');
+    } else{
+        document.body.classList.remove('dark-mode');
+    }
+
   }, [dark]);
 
   const DarkMode = () => {
